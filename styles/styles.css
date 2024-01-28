@@ -21,6 +21,8 @@ body {
 	background-color: #ffffff;
 	box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 	padding: 105px 90px;
+	box-sizing: border-box;
+	max-width: 100%; /* Исправлено */
 }
 
 /* Респонсив для мобильных устройств и планшетов */
@@ -32,6 +34,16 @@ body {
 	.main__container {
 		width: 100%;
 		padding: 20px;
+	}
+
+	.about__description {
+		width: 100%; /* Равная ширина на мобильных устройствах */
+		box-sizing: border-box;
+		margin-right: 0; /* Исправлено */
+	}
+
+	.sidebar {
+		width: 100%;
 	}
 }
 
@@ -64,7 +76,7 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 	color: #595959;
-	width: 650px;
+	width: 100%; /* Исправлено */
 }
 
 .projects {
@@ -260,3 +272,77 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 }
+
+:root {
+	--background-color: #f5f7fa;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: var(--background-color);
+	margin: 0;
+}
+
+/* main style */
+.main {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* main content style */
+.main__container {
+	background-color: #ffffff;
+	box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+	padding: 105px 90px;
+	box-sizing: border-box;
+	width: 100%; /* Чтобы контейнер занимал 100% ширины */
+	max-width: 1200px; /* Ограничение максимальной ширины */
+	margin: 0 auto; /* Выравнивание по центру */
+}
+
+/* Респонсив для мобильных устройств и планшетов */
+@media only screen and (max-width: 350px) {
+	.main {
+		max-width: 350px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main__container {
+		max-width: 340px;
+		padding: 10px;
+	}
+
+	.about__description {
+		width: 100%;
+	}
+
+	.sidebar {
+		width: 100%;
+		max-width: 340px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.photo {
+		width: 340px;
+		margin-bottom: 10px;
+	}
+}
+
+/* Дополнительные стили для планшетов (768px - 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.main__container {
+		padding: 60px 40px;
+	}
+}
+
+/* Дополнительные стили для устройств с шириной больше 1024px */
+@media only screen and (min-width: 1024px) {
+	.main__container {
+		padding: 105px 90px;
+	}
+}
+
+/* about styles и другие стили не меняем */
