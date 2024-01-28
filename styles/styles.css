@@ -329,6 +329,155 @@ body {
 		width: 340px;
 		margin-bottom: 10px;
 	}
+
+	.about__title {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 15px;
+		color: #000000;
+		margin-bottom: 5px;
+	}
+
+	.about__name {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 27px;
+		line-height: 30px;
+		color: #000000;
+		margin-bottom: 15px;
+	}
+
+	.about__description {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: #595959;
+		width: 100%; /* Исправлено */
+	}
+
+	.projects {
+		margin-bottom: 20px;
+	}
+
+	.title {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 21px;
+		color: #000000;
+		margin-bottom: 10px;
+	}
+
+	.project-list {
+		padding: 0;
+		margin-left: 15px;
+	}
+
+	.project-item {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 18px;
+		color: #000000;
+	}
+
+	.project,
+	.project-link {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+		color: #595959;
+	}
+
+	.project-link {
+		margin-left: 10px;
+	}
+
+	.project-bracket {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		color: #000000;
+	}
+
+	/* work styles */
+	.work {
+		/* padding: 100px 40px 50px 20px;
+    padding: 50px;
+    padding: 50px 100px; */
+	}
+
+	.work-position {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		color: #000000;
+		margin-bottom: 10px;
+	}
+
+	.organization {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		color: #fb6d3a;
+	}
+
+	.period {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: #a8a8a8;
+		margin-bottom: 10px;
+	}
+
+	.line {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+		color: #000000;
+	}
+
+	.work-list {
+		padding: 0;
+		margin-left: 15px;
+	}
+
+	.work-list-item {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		color: #595959;
+	}
+
+	.education {
+	}
+
+	.education-position {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		color: #fb6d3a;
+		margin-bottom: 10px;
+	}
+
+	.education-skill {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		color: #000000;
+		margin-bottom: 10px;
+	}
 }
 
 /* Дополнительные стили для планшетов (768px - 1023px) */
