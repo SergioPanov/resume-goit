@@ -306,6 +306,7 @@ body {
 @media only screen and (max-width: 350px) {
 	.main {
 		max-width: 350px;
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -317,6 +318,7 @@ body {
 
 	.about__description {
 		width: 100%;
+		max-width: 340px;
 	}
 
 	.sidebar {
@@ -325,8 +327,46 @@ body {
 		flex-direction: column;
 		align-items: center;
 	}
+
+	.sidebar-title {
+		color: #ffffff;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 10px;
+	}
+
+	.contact-type {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.contact-link {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+
+		/* opacity: 0.5; */
+	}
+
+	.tech-skills-list {
+		margin: 14px;
+	}
+
+	.tech-skills-text {
+		color: #ffffff;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
 	.photo {
-		width: 340px;
+		width: 100%;
 		margin-bottom: 10px;
 	}
 
